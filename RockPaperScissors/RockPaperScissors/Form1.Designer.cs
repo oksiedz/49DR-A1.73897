@@ -108,7 +108,7 @@ namespace RockPaperScissors
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(289, 9);
+            this.label1.Location = new System.Drawing.Point(280, 22);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(63, 13);
             this.label1.TabIndex = 8;
@@ -117,7 +117,7 @@ namespace RockPaperScissors
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(563, 9);
+            this.label2.Location = new System.Drawing.Point(561, 22);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(51, 13);
             this.label2.TabIndex = 9;
@@ -135,7 +135,7 @@ namespace RockPaperScissors
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(429, 118);
+            this.label4.Location = new System.Drawing.Point(444, 119);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(13, 13);
             this.label4.TabIndex = 11;
@@ -144,7 +144,7 @@ namespace RockPaperScissors
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(377, 276);
+            this.label5.Location = new System.Drawing.Point(402, 276);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(34, 13);
             this.label5.TabIndex = 12;
@@ -153,7 +153,7 @@ namespace RockPaperScissors
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(480, 276);
+            this.label6.Location = new System.Drawing.Point(458, 276);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(35, 13);
             this.label6.TabIndex = 13;
