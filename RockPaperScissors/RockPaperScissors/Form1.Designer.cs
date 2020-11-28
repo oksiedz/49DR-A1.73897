@@ -157,10 +157,14 @@ namespace RockPaperScissors
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(458, 276);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 13);
+            this.label6.Size = new System.Drawing.Size(13, 13);
             this.label6.TabIndex = 13;
-            this.label6.Text = "label6";
+            this.label6.Text = "1";
             this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
             // 
             // Form1
             // 
