@@ -49,7 +49,7 @@ namespace RockPaperScissors
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::RockPaperScissors.Properties.Resources.scissiors;
+            this.pictureBox1.Image = global::RockPaperScissors.Properties.Resources.question;
             this.pictureBox1.Location = new System.Drawing.Point(231, 44);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(160, 175);
@@ -58,6 +58,7 @@ namespace RockPaperScissors
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Image = global::RockPaperScissors.Properties.Resources.question;
             this.pictureBox2.Location = new System.Drawing.Point(508, 44);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(160, 175);
