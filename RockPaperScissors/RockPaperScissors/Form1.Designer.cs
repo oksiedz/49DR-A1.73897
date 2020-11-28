@@ -74,6 +74,7 @@ namespace RockPaperScissors
             this.button1.TabIndex = 4;
             this.button1.Text = "Kamień";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -95,6 +96,7 @@ namespace RockPaperScissors
             this.button3.TabIndex = 6;
             this.button3.Text = "Nożyczki";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -160,7 +162,6 @@ namespace RockPaperScissors
             this.label6.Size = new System.Drawing.Size(13, 13);
             this.label6.TabIndex = 13;
             this.label6.Text = "1";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // timer1
             // 
