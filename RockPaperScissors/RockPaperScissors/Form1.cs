@@ -170,5 +170,18 @@ namespace RockPaperScissors
             pictureBox2.Image = Properties.Resources.question;
 
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            //Restart parametrow do nowej rozgrywki
+            playerWins = 0;
+            computerWins = 0;
+            rounds = 3;
+            playerChoice = "none";
+            pictureBox1.Image = Properties.Resources.question;
+            timer1.Enabled = true;
+            pictureBox2.Image = Properties.Resources.question;
+            timePerRound = 6;
+        }
     }
 }
