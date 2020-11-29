@@ -40,12 +40,25 @@ namespace RockPaperScissors
             //Poczatkowy wybor gracza - brak wyboru
             playerChoice = "none";
         }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //Ustawienie kamienia
+            playerChoice = "rock";
+            pictureBox1.Image = Properties.Resources.rock;
+        }
 
         private void button2_Click(object sender, EventArgs e)
         {
             //Ustawienie papieru
             playerChoice = "paper";
             pictureBox1.Image = Properties.Resources.paper;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            //Ustawienie nozyczek
+            playerChoice = "scissor";
+            pictureBox1.Image = Properties.Resources.scissiors;
         }
 
         private Form2 formNew = new Form2();
@@ -55,18 +68,19 @@ namespace RockPaperScissors
             formNew.Activate();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button5_Click(object sender, EventArgs e)
         {
-            //Ustawienie kamienia
-            playerChoice = "rock";
-            pictureBox1.Image = Properties.Resources.rock;
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            //Ustawienie nozyczek
-            playerChoice = "scissor";
-            pictureBox1.Image = Properties.Resources.scissiors;
+            //Restart parametrow do nowej rozgrywki
+            playerWins = 0;
+            computerWins = 0;
+            rounds = 3;
+            playerChoice = "none";
+            pictureBox1.Image = Properties.Resources.question;
+            timer1.Enabled = true;
+            pictureBox2.Image = Properties.Resources.question;
+            timePerRound = 6;
+            gameOver = 0;
+            gameStart = 1;
         }
 
         private void updateResults()
@@ -227,21 +241,6 @@ namespace RockPaperScissors
             pictureBox1.Image = Properties.Resources.question;
             timer1.Enabled = true;
             pictureBox2.Image = Properties.Resources.question;
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            //Restart parametrow do nowej rozgrywki
-            playerWins = 0;
-            computerWins = 0;
-            rounds = 3;
-            playerChoice = "none";
-            pictureBox1.Image = Properties.Resources.question;
-            timer1.Enabled = true;
-            pictureBox2.Image = Properties.Resources.question;
-            timePerRound = 6;
-            gameOver = 0;
-            gameStart = 1;
         }
 
         private void Form1_Load(object sender, EventArgs e)

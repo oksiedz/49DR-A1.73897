@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="textBox1.Text" xml:space="preserve">
-    <value>Witaj w grze w papier, kamien, nozyce. Wybierz przyciskiem odpowiednia zagrywke, masz na to 5 sekund. Gdy czas dobiegnie konca zobaczysz zagrywke komputera. Gra trwa do 3 rund. Zasady sa jak nastepuje: Kamien wygrywa z nozycami, papier wygrywa z kamieniem, nozyce wygrywaja z papierem. Powodzenia</value>
+    <value>Witaj w grze w papier, kamień, nożyce. Wybierz przyciskiem odpowiednią zagrywke, masz na to 5 sekund. Gdy czas dobiegnie końca zobaczysz zagrywkę komputera. Gra trwa do 3 rund. Zasady są jak następuje: Kamień wygrywa z nożycami, papier wygrywa z kamieniem, nożyce wygrywają z papierem. Powodzenia</value>
   </data>
   <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
