@@ -49,8 +49,11 @@ namespace RockPaperScissors
             this.ClientSize = new System.Drawing.Size(229, 163);
             this.Controls.Add(this.textBox1);
             this.Enabled = false;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form2";
-            this.Text = "Form2";
+            this.Text = "Pomoc";
             this.ResumeLayout(false);
             this.PerformLayout();
 
