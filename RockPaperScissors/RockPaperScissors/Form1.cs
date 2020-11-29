@@ -50,7 +50,9 @@ namespace RockPaperScissors
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            //Ustawienie kamienia
+            playerChoice = "rock";
+            pictureBox1.Image = Properties.Resources.rock;
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -146,6 +148,16 @@ namespace RockPaperScissors
             {
                 label3.Text = "Zwyciezca gry: Komputer";
             }    
+        }
+
+        private void nextRound()
+        {
+            //Reset parametrow i ustawienie znakow zapytania w obrazkach
+            playerChoice = "none";
+            pictureBox1.Image = Properties.Resources.question;
+            timer1.Enabled = true;
+            pictureBox2.Image = Properties.Resources.question;
+
         }
     }
 }
