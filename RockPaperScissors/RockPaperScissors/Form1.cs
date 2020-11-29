@@ -8,9 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-//To be done:
-//Gra powinna rozpoczac sie dopiero po nacisnieciu przycisku.
-
 namespace RockPaperScissors
 {
     public partial class Form1 : Form
@@ -31,7 +28,9 @@ namespace RockPaperScissors
         //Zmienne do sumowania wygranych gracza i komputera
         public int playerWins = 0;
         public int computerWins = 0;
+        //Deklaracja zmiennych start gry i koniec gry
         public int gameOver = 0;
+        public int gameStart = 0;
 
         public Form1()
         {
@@ -71,6 +70,10 @@ namespace RockPaperScissors
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            if(gameStart == 0)
+            {
+                return;
+            }
             //Aktualizacja rundy
             label6.Text = Convert.ToString(rounds);
             //Wyswietlenie wyniku biezacego
@@ -206,6 +209,7 @@ namespace RockPaperScissors
             pictureBox2.Image = Properties.Resources.question;
             timePerRound = 6;
             gameOver = 0;
+            gameStart = 1;
         }
     }
 }
