@@ -143,11 +143,11 @@ namespace RockPaperScissors
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(282, 276);
+            this.label5.Location = new System.Drawing.Point(260, 276);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(39, 13);
+            this.label5.Size = new System.Drawing.Size(77, 13);
             this.label5.TabIndex = 12;
-            this.label5.Text = "Runda";
+            this.label5.Text = "Pozostalo rund";
             // 
             // label6
             // 
