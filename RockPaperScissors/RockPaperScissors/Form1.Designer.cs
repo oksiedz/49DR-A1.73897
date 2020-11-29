@@ -114,9 +114,9 @@ namespace RockPaperScissors
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(280, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 13);
+            this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 8;
-            this.label1.Text = "playerName";
+            this.label1.Text = "Gracz";
             // 
             // label2
             // 
@@ -150,9 +150,9 @@ namespace RockPaperScissors
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(402, 276);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(34, 13);
+            this.label5.Size = new System.Drawing.Size(39, 13);
             this.label5.TabIndex = 12;
-            this.label5.Text = "runda";
+            this.label5.Text = "Runda";
             // 
             // label6
             // 
