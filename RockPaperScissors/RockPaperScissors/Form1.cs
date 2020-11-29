@@ -8,6 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+//To be done:
+//Na koniec gry w message box nie podbija wyniu
+//Gra powinna rozpoczac sie dopiero po nacisnieciu przycisku.
+
 namespace RockPaperScissors
 {
     public partial class Form1 : Form
