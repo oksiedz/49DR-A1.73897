@@ -47,7 +47,8 @@ namespace RockPaperScissors
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            Form2 form2 = new Form2();
+            form2.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -66,6 +67,11 @@ namespace RockPaperScissors
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            //Aktualizacja rundy
+            label6.Text = Convert.ToString(rounds);
+            //Wyswietlenie wyniku biezacego
+            label9.Text = Convert.ToString(playerWins);
+            label10.Text = Convert.ToString(computerWins);
             //Zmniejszenie czasu o 1
             timePerRound--;
             //Aktualizacja wyswietlonego czasu w okreslonej labelce
@@ -73,12 +79,11 @@ namespace RockPaperScissors
             //Akcje do zrobienia gdy skonczy się czas: wylaczenie timera, wybor zagrania komputera, obsluga konca gry lub nastepnej runy
             if (timePerRound < 1)
             {
-                //Aktualizacja rundy
-                label6.Text = Convert.ToString(rounds);
                 //Wylaczenie timera
                 timer1.Enabled = false;
                 //Restart czasu do wartosci poczatkowej
                 timePerRound = 6;
+                //Losowy wybor liczby pod zagrywke komputera
                 //Losowy wybor liczby pod zagrywke komputera
                 randomNumber = rnd.Next(0, 3);
                 //Zagrywka komputera - wybor na podstawie liczby losowej
@@ -148,11 +153,11 @@ namespace RockPaperScissors
         {
             if (playerWins > computerWins)
             {
-                label3.Text = "Zwyciezca gry: Gracz";
+                MessageBox.Show("Zwyciezca gry: Gracz\n z wynikiem: " + Convert.ToString(playerWins));
             }
             else
             {
-                label3.Text = "Zwyciezca gry: Komputer";
+                MessageBox.Show("Zwyciezca gry: Komputer\n z wynikiem: " + Convert.ToString(computerWins));
             }    
         }
 

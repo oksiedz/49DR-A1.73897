@@ -8,3 +8,4 @@ C:\Users\toksiedzki\Documents\Repozytoria\49DR-A1.73897\RockPaperScissors\RockPa
 C:\Users\toksiedzki\Documents\Repozytoria\49DR-A1.73897\RockPaperScissors\RockPaperScissors\obj\Debug\RockPaperScissors.csproj.CoreCompileInputs.cache
 C:\Users\toksiedzki\Documents\Repozytoria\49DR-A1.73897\RockPaperScissors\RockPaperScissors\obj\Debug\RockPaperScissors.exe
 C:\Users\toksiedzki\Documents\Repozytoria\49DR-A1.73897\RockPaperScissors\RockPaperScissors\obj\Debug\RockPaperScissors.pdb
+C:\Users\toksiedzki\Documents\Repozytoria\49DR-A1.73897\RockPaperScissors\RockPaperScissors\obj\Debug\RockPaperScissors.Form2.resources
