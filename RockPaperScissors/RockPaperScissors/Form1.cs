@@ -108,6 +108,30 @@ namespace RockPaperScissors
         //Sprawdzenie wyniku gry
         private void checkGame()
         {
+            if ((playerChoice == "rock" && computerCommand == "scissor") | (playerChoice == "paper" && computerCommand == "rock") | (playerChoice == "scissor" && computerCommand == "paper"))
+            {
+                MessageBox.Show("Gracz wygral");
+                playerWins++;
+                rounds--;
+                nextRound();
+            }
+            else if ((playerChoice == "rock" && computerCommand == "paper") | (playerChoice == "paper" && computerCommand == "scissor") | (playerChoice == "scissor" && computerCommand == "rock"))
+            {
+                MessageBox.Show("Computer wygral");
+                computerWins++;
+                rounds--;
+                nextRound();
+            }
+            else if (playerChoice == "none")
+            {
+                MessageBox.Show("Dokonaj wyboru");
+                nextRound();
+            }
+            else
+            {
+                MessageBox.Show("Remis");
+                nextRound();
+            }
 
         }
 
