@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 //To be done:
-//Na koniec gry w message box nie podbija wyniu
 //Gra powinna rozpoczac sie dopiero po nacisnieciu przycisku.
 
 namespace RockPaperScissors
@@ -32,6 +31,7 @@ namespace RockPaperScissors
         //Zmienne do sumowania wygranych gracza i komputera
         public int playerWins = 0;
         public int computerWins = 0;
+        public int gameOver = 0;
 
         public Form1()
         {
@@ -112,10 +112,12 @@ namespace RockPaperScissors
                 //Sprawdzenie ile run zostalo do gry - rezultat: zakonczenie gry lub dalsza rozgrywka
                 if (rounds > 1)
                 {
-                    checkGame();
+                    checkGame(gameOver);
                 }
                 else
                 {
+                    gameOver = 1;
+                    checkGame(gameOver);
                     decisionEngine();
                 }    
             }
@@ -123,31 +125,44 @@ namespace RockPaperScissors
         }
 
         //Sprawdzenie wyniku gry
-        private void checkGame()
+        private void checkGame(int gameOver)
         {
             if ((playerChoice == "rock" && computerCommand == "scissor") | (playerChoice == "paper" && computerCommand == "rock") | (playerChoice == "scissor" && computerCommand == "paper"))
             {
                 MessageBox.Show("Wygral Gracz");
                 playerWins++;
-                rounds--;
-                nextRound();
+                if (gameOver == 0)
+                {
+                    rounds--;
+                    nextRound();
+                }
+                    
             }
             else if ((playerChoice == "rock" && computerCommand == "paper") | (playerChoice == "paper" && computerCommand == "scissor") | (playerChoice == "scissor" && computerCommand == "rock"))
             {
                 MessageBox.Show("Wygral komputer");
                 computerWins++;
-                rounds--;
-                nextRound();
+                if (gameOver == 0)
+                {
+                    rounds--;
+                    nextRound();
+                }
             }
             else if (playerChoice == "none")
             {
                 MessageBox.Show("Dokonaj wyboru");
-                nextRound();
+                if (gameOver == 0)
+                {
+                    nextRound();
+                }
             }
             else
             {
                 MessageBox.Show("Remis");
-                nextRound();
+                if (gameOver == 0)
+                {
+                    nextRound();
+                }
             }
 
         }
@@ -159,10 +174,14 @@ namespace RockPaperScissors
             {
                 MessageBox.Show("Zwyciezca gry: Gracz\n z wynikiem: " + Convert.ToString(playerWins));
             }
-            else
+            else if (computerWins > playerWins)
             {
                 MessageBox.Show("Zwyciezca gry: Komputer\n z wynikiem: " + Convert.ToString(computerWins));
-            }    
+            }
+            else
+            {
+                MessageBox.Show("Remis");
+            }
         }
 
         private void nextRound()
@@ -186,6 +205,7 @@ namespace RockPaperScissors
             timer1.Enabled = true;
             pictureBox2.Image = Properties.Resources.question;
             timePerRound = 6;
+            gameOver = 0;
         }
     }
 }
