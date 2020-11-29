@@ -72,7 +72,9 @@ namespace RockPaperScissors
             label4.Text = Convert.ToString(timePerRound);
             //Akcje do zrobienia gdy skonczy się czas: wylaczenie timera, wybor zagrania komputera, obsluga konca gry lub nastepnej runy
             if (timePerRound < 1)
-            { 
+            {
+                //Aktualizacja rundy
+                label6.Text = Convert.ToString(rounds);
                 //Wylaczenie timera
                 timer1.Enabled = false;
                 //Restart czasu do wartosci poczatkowej
