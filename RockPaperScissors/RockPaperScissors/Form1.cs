@@ -138,7 +138,14 @@ namespace RockPaperScissors
         //Sprawdzenie ilosci wygranych i wyswietlenie finalnego zwyciezcy
         private void decisionEngine()
         {
-
+            if (playerWins > computerWins)
+            {
+                label3.Text = "Zwyciezca gry: Gracz";
+            }
+            else
+            {
+                label3.Text = "Zwyciezca gry: Komputer";
+            }    
         }
     }
 }
