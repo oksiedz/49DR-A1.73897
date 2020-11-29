@@ -100,7 +100,7 @@ namespace RockPaperScissors
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 6;
-            this.button3.Text = "Nożyczki";
+            this.button3.Text = "Nożyce";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -170,9 +170,9 @@ namespace RockPaperScissors
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(292, 121);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(77, 13);
+            this.label3.Size = new System.Drawing.Size(79, 13);
             this.label3.TabIndex = 14;
-            this.label3.Text = "Pozostaly czas";
+            this.label3.Text = "Pozostały czas";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label7
@@ -229,7 +229,7 @@ namespace RockPaperScissors
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(173, 13);
             this.label11.TabIndex = 20;
-            this.label11.Text = "Aby rozpoczac gre kliknij Nowa gra";
+            this.label11.Text = "Aby rozpocząć gre kliknij Nowa gra";
             // 
             // Form1
             // 
@@ -259,7 +259,7 @@ namespace RockPaperScissors
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
-            this.Text = "Gra papier, kamien, nozyce";
+            this.Text = "Gra papier, kamień, nożyce";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

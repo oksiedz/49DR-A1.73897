@@ -48,10 +48,11 @@ namespace RockPaperScissors
             pictureBox1.Image = Properties.Resources.paper;
         }
 
+        private Form2 formNew = new Form2();
         private void button4_Click(object sender, EventArgs e)
         {
-            Form2 form2 = new Form2();
-            form2.Show();
+            formNew.Show();
+            formNew.Activate();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -163,7 +164,7 @@ namespace RockPaperScissors
         {
             if (whoWonTheParty == 1)
             {
-                MessageBox.Show("Zwyciezca rundy: Gracz");
+                MessageBox.Show("Zwycięzca rundy: Gracz");
                 playerWins++;
                 if (gameOver == 0)
                 {
@@ -174,7 +175,7 @@ namespace RockPaperScissors
             }
             else if (whoWonTheParty == 2)
             {
-                MessageBox.Show("Zwyciezca rundy: komputer");
+                MessageBox.Show("Zwycięzca rundy: komputer");
                 computerWins++;
                 if (gameOver == 0)
                 {
@@ -207,11 +208,11 @@ namespace RockPaperScissors
 
             if (playerWins > computerWins)
             {
-                MessageBox.Show("Zwyciezca gry: Gracz\n z wynikiem: " + Convert.ToString(playerWins));
+                MessageBox.Show("Zwycięzca gry: Gracz\n z wynikiem: " + Convert.ToString(playerWins));
             }
             else if (computerWins > playerWins)
             {
-                MessageBox.Show("Zwyciezca gry: Komputer\n z wynikiem: " + Convert.ToString(computerWins));
+                MessageBox.Show("Zwycięzca gry: Komputer\n z wynikiem: " + Convert.ToString(computerWins));
             }
             else
             {
