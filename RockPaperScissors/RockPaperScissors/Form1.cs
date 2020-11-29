@@ -40,7 +40,9 @@ namespace RockPaperScissors
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            //Ustawienie papieru
+            playerChoice = "paper";
+            pictureBox1.Image = Properties.Resources.paper;
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -57,7 +59,9 @@ namespace RockPaperScissors
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            //Ustawienie nozyczek
+            playerChoice = "scissor";
+            pictureBox1.Image = Properties.Resources.scissiors;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -112,14 +116,14 @@ namespace RockPaperScissors
         {
             if ((playerChoice == "rock" && computerCommand == "scissor") | (playerChoice == "paper" && computerCommand == "rock") | (playerChoice == "scissor" && computerCommand == "paper"))
             {
-                MessageBox.Show("Gracz wygral");
+                MessageBox.Show("Wygral Gracz");
                 playerWins++;
                 rounds--;
                 nextRound();
             }
             else if ((playerChoice == "rock" && computerCommand == "paper") | (playerChoice == "paper" && computerCommand == "scissor") | (playerChoice == "scissor" && computerCommand == "rock"))
             {
-                MessageBox.Show("Computer wygral");
+                MessageBox.Show("Wygral komputer");
                 computerWins++;
                 rounds--;
                 nextRound();
