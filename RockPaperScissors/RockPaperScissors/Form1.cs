@@ -88,7 +88,7 @@ namespace RockPaperScissors
             timePerRound--;
             //Aktualizacja wyswietlonego czasu w okreslonej labelce
             label4.Text = Convert.ToString(timePerRound);
-            
+
             //Akcje do zrobienia gdy skonczy się czas: wylaczenie timera, wybor zagrania komputera, obsluga konca gry lub nastepnej runy
             if (timePerRound < 1)
             {
@@ -101,7 +101,7 @@ namespace RockPaperScissors
                 randomNumber = rnd.Next(0, 3);
                 //Zagrywka komputera - wybor na podstawie liczby losowej
                 computerCommand = computerChoice[randomNumber];
-                
+
                 //Ustawienie prawidlowego obrazka dla zagrywki komputera
                 switch (computerCommand)
                 {
@@ -128,7 +128,7 @@ namespace RockPaperScissors
                     gameOver = 1;
                     checkGame(gameOver, whoWonOneRound());
                     decisionEngine();
-                }    
+                }
             }
         }
 
@@ -170,7 +170,7 @@ namespace RockPaperScissors
                     rounds--;
                     nextRound();
                 }
-                    
+
             }
             else if (whoWonTheParty == 2)
             {
@@ -226,7 +226,6 @@ namespace RockPaperScissors
             pictureBox1.Image = Properties.Resources.question;
             timer1.Enabled = true;
             pictureBox2.Image = Properties.Resources.question;
-
         }
 
         private void button5_Click(object sender, EventArgs e)
